@@ -1,4 +1,4 @@
-let addFn = require('./modules/mod-one');
+let { add, multiply } = require('./modules/mod-one');
 
-console.log(addFn(4,5));
-console.log(addFn(2,3));
+console.log(add(2,3));
+console.log(multiply(2,3));
