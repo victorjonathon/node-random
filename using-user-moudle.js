@@ -1,4 +1,6 @@
-let { add, multiply } = require('./modules/mod-one');
+const math = require('./modules/mod-one');
 
-console.log(add(2,3));
-console.log(multiply(2,3));
+console.log(math.add(2,3));
+console.log(math.multiply(2,3));
+
+
