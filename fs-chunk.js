@@ -14,6 +14,10 @@ readStream.on('error', err => {
 });
 
 readStream.on('data', (chunk) => {
-    console.log(chunk);
+    //console.log(chunk);
     writeStream.write(chunk);
+});
+
+writeStream.on('close', () => {
+    console.log('Write operation completed.');
 });
